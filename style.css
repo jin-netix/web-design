@@ -57,4 +57,9 @@ body {
     list-style: none;
     display: flex;
     padding-left: 0px;
+    justify-content: space-between;
+}
+
+#contact-list li {
+    margin: 0px 7px;
 }
