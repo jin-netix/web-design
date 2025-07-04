@@ -1,5 +1,41 @@
+:root {
+    --priamry: #f0f0f6;
+    --secondary: #ffffff;
+    --paragraph-font: #767676;
+    --black: #2B2B2B;
+    --available: #7EB942;
+    --yellow: #FFB400;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
 body {
-    background-color: #f0f0f6;
+    background-color: var(--priamry);
+    color: var(--black);
+    font-kerning: none;
+    font-feature-settings: 'calt' off;
+    /* Paragraph Progress - 15 */
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 160% */
+    text-transform: capitalize;
+}
+
+.title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 123.6%;
+    /* 22.248px */
 }
 
 #container {
@@ -9,19 +45,20 @@ body {
 
 #side-bar {
     width: 305px;
-    height: 1315px;
-    background-color: #FFFFFF;
+    background-color: var(--secondary);
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #avatar {
-    width: 219px;
-    height: 281px;
+    width: 225px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 
 #circle-img {
@@ -32,7 +69,7 @@ body {
 .dot {
     height: 16px;
     width: 16px;
-    background-color: #7eb942;
+    background-color: var(--available);
     border-radius: 50%;
     display: inline-block;
     position: relative;
@@ -40,26 +77,85 @@ body {
     left: 124px;
 }
 
-#avatar-text {
+#avatar__info {
     display: flex;
     justify-content: center;
     margin-top: 30px;
     flex-direction: column;
 }
 
-#avatar-text .inner-text {
-    margin-top: 0px;
+#avatar__info .avatar__info__text {
     margin-bottom: 15px;
-    align-content: center;
+    text-align: center;
 }
 
 #contact-list {
     list-style: none;
     display: flex;
-    padding-left: 0px;
     justify-content: space-between;
 }
 
 #contact-list li {
     margin: 0px 7px;
+    width: 24px;
+    height: 24px;
 }
+
+#contact-list li img {
+    width: 100%;
+}
+
+.side-bar__line {
+    width: 220px;
+    height: 1.5px;
+    background-color: var(--priamry);
+    margin: 25px;
+    border: none;
+}
+
+#personal-info {
+    width: 225px;
+}
+
+#personal-info .personal-info__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#personal-info .personal-info__info:last-child {
+    margin-bottom: 0px;
+}
+
+#personal-info .personal-info__info .personal-info__info__lable {
+    background-color: var(--yellow);
+    padding: 1px 5px;
+}
+
+#personal-info .personal-info__info:nth-child(3) .personal-info__info__value {
+    color: var(--available);
+}
+
+#languages {
+    width: 225px;
+}
+
+#languages .languages__title {
+    margin-bottom: 15px;
+}
+
+#languages .languages__lang { 
+    margin-bottom: 5px;
+}
+#languages .languages__lang:last-child { 
+    margin-bottom: 0px;
+}
+
+#languages .languages__lang .languages__lang__text {
+    color: var(--paragraph-font); 
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
