@@ -31,11 +31,17 @@ body {
 }
 
 .title {
+    color: var(--black);
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 123.6%;
     /* 22.248px */
+}
+
+.label-value--space-between {
+    display: flex;
+    justify-content: space-between;
 }
 
 #container {
@@ -84,9 +90,15 @@ body {
     flex-direction: column;
 }
 
-#avatar__info .avatar__info__text {
+#avatar__info .avatar__info__name {
     margin-bottom: 15px;
     text-align: center;
+}
+
+#avatar__info .avatar__info__job {
+    margin-bottom: 15px;
+    text-align: center;
+    color: var(--paragraph-font);
 }
 
 #contact-list {
@@ -118,8 +130,6 @@ body {
 }
 
 #personal-info .personal-info__info {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 10px;
 }
 
@@ -135,6 +145,7 @@ body {
 #personal-info .personal-info__info:nth-child(3) .personal-info__info__value {
     color: var(--available);
 }
+
 
 #languages {
     width: 225px;
@@ -153,9 +164,89 @@ body {
 
 #languages .languages__lang .languages__lang__text {
     color: var(--paragraph-font); 
-    display: flex;
-    justify-content: space-between;
 }
+
+#skills {
+    width: 225px;
+}
+
+#skills .skills__title {
+    margin-bottom: 15px;
+}
+
+#skills .skills__skill {
+    margin-bottom: 5px;
+}
+#skills .skills__skill:last-child {
+    margin-bottom: 0px;
+}
+
+#skills .skills__skill .skills__skill__text {
+    color: var(--paragraph-font);
+}
+
+#extra-skills {
+    width: 225px;
+}
+
+#extra-skills .extra-skills__title {
+    margin-bottom: 15px;
+} 
+
+#extra-skills .extra-skills__skill {
+    display: flex;
+    margin-bottom: 5px;
+}
+#extra-skills .extra-skills__skill:last-child {
+    margin-bottom: 0px;
+}
+
+#extra-skills .extra-skills__skill .extra-skills__skill__bullet {
+    margin-right: 15px;
+   
+} 
+
+#extra-skills .extra-skills__skill .extra-skills__skill__content {
+    color: var(--paragraph-font);
+    margin-bottom: 0px;
+}
+
+#download-cv {
+    width: 220px;
+    height: 40px;
+    background-color: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#download-cv .download-cv__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#download-cv .download-cv__button .download-cv__button__text {
+    margin-right: 20px;
+}
+
+#download-cv .download-cv__button .download-cv__button__icon {
+    width: 14px;
+    height: 16px;
+}
+
+#main-content {
+    width: 470px;
+    margin-left: 40px;
+}
+
+#banner {
+    background-color: var(--secondary);
+    
+}
+
+
 
 
 
